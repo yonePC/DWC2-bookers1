@@ -28,7 +28,7 @@
 <h2>New book</h2>
 
 <% if @book.errors.any? %>
-  <%= @book.errors.count %>エラー
+  <%= @book.errors.count %>errors
   <% @book.errors.full_messages.each do |message| %>
     <li><%= message %></li>
   <% end %>
