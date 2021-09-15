@@ -1,4 +1,12 @@
 <h2>Editing book</h2>
+
+<% if @book.errors.any? %>
+  <%= @book.errors.count %>エラー
+  <% @book.errors.full_messages.each do |message| %>
+    <li><%= message %></li>
+  <% end %>
+<% end %>
+
 <%= form_with model:@book, local:true do |f| %>
 <div>Title</div>
 <div><%= f.text_field :title %></div>
