@@ -16,8 +16,8 @@
     <td><%= books.body %></td>
 
     <td><%= link_to'Show', book_path(books) %></td>
-    <!--<td>%= link_to'Edit', book_path(book) %></td>-->
-    <!--<td>%= link_to'Destroy', book_path(book) %></td>-->
+    <td><%= link_to'Edit', edit_book_path(books) %></td>
+    <!--<td>%= link_to'Destroy', book_path(books) %></td>-->
     </tr>
     <% end %>
 
